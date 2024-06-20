@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitudes</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../images/grupo_pochteca_logo.jpeg" alt="Logo de la empresa"> 
+            <h1>Colaborador</h1>
+        </div>
+        <div class="form-container">
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="nombre-empleado">Nombre del empleado:</label>
+                    <input type="text" id="nombre-empleado">
+                </div>
+                <div class="form-group flex-item">
+                    <label for="area">Area:</label>
+                    <input type="text" id="area">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo">
+            </div>
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="tipo-solicitud-empleado">Tipo de solicitud:</label>
+                    <select id="tipo-solicitud-empleado">
+                        <option value="pagos">Pagos y comprobantes (Solicitud de comprobantes de facturas ya pagadas)</option>
+                        <option value="estados-cuenta">Solicitud de fecha de pago (requerido por el proveedor)</option>
+                    </select>
+                </div>
+                <div class="form-group flex-item">
+                    <label for="tipo-sucursal">Sucursal:</label>
+                    <select id="tipo-sucursal">
+                        <option value="sanjuan">San Juan</option>
+                        <option value="sanjose">San Jose</option>
+                        <option value="cancun">Cancun</option>
+                        <option value="queretaro">Queretaro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="adjuntar-archivo-empleado">Adjuntar archivo:</label>
+                    <input type="file" id="adjuntar-archivo-empleado">
+                </div>
+                <div class="form-group flex-item">
+                    <label for="fecha-limite-empleado">Fecha límite de respuesta:</label>
+                    <input type="date" id="fecha-limite-empleado">
+                </div>
+                <div class="form-group flex-item">
+                    <label for="estatus-solicitud-empleado">Estatus de la solicitud:</label>
+                    <select id="estatus-solicitud-empleado">
+                        <option value="solienviada">Solicitud enviada</option>
+                        <option value="solirespondida">Solicitud respondida</option>
+                        <option value="enespera">En espera de respuesta de usuario</option>
+                    </select>
+                </div>
+            </div>         
+            <div class="form-group">
+                <label for="comentarios-empleado">Comentarios:</label>
+                <textarea id="comentarios-empleado"></textarea>
+            </div>
+            <div class="submit-button">
+                <button type="submit">Subir</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

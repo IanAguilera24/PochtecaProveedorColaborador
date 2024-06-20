@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitudes</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="src/css/index.css">
+</head>
+<body>
+    <img src="src/images/grupo_pochteca_logo.jpeg" alt="Logo de la empresa" class="logo"> 
+    <div class="container">
+        <div class="header">
+            <div class="portalcredito">
+                <p class="portaltitulo">Registro</p>                
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo">
+            </div>
+            <div class="submit-button">
+                <button type="button" id="submitButton">Subir</button>
+            </div>
+            <label for="pdf-manual">Manual de Usuario</label>
+            <div class="pdf-viewer">
+                <embed id="pdf-manual" src="src/files/PORRON CON TAPAS ROTAS Y SUCIO 2.pdf" type="application/pdf" class="pdf-manual">
+            </div>
+        </div>
+    </div>
+    <script src="../js/menu.js"></script>
+    <script src="src/js/index.js"></script>
+</body>
+</html>

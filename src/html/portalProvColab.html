@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Ejemplo</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="../css/portalProvColab.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../images/grupo_pochteca_logo.jpeg" alt="Logo" class="logo">
+        <button id="solicitudes">Solicitudes</button>
+        <img src="../images/icons/profile.png" alt="Foto de Perfil" class="profile">
+        <h1>Portal Proveedor y Colaborador</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </div>
+    <div class="content">
+        <div class="item" onclick="window.location.href='proveedor.html'">
+            <h2>Proveedor</h2>
+            <p>Descripción para proveedor</p>
+        </div>
+        <div class="item" onclick="window.location.href='colaborador.html'">
+            <h2>Colaborador</h2>
+            <p>Descripción para colaborador</p>
+        </div>
+    </div>
+    <script src="../js/portalProvColab.js"></script>
+</body>
+</html>

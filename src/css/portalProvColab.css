@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+.header {
+    background-color: #1D741B;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh; /* 35% de la pantalla */
+    position: relative;
+}
+.header img.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+}
+.header img.profile {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    border-radius: 50%;
+}
+.header h1 {
+    margin: 50px 0 10px;
+    padding: 40px;
+}
+.header .search-bar {
+    width: 40%;
+    padding: 30px;
+}
+.header .search-bar input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh; 
+    flex-direction: column;
+}
+.item {
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.item:hover {
+    background-color: lightgray;
+    color: black;
+}
+.item h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.item p {
+    font-size: 16px;
+    color: gray;
+}

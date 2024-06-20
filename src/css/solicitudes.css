@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1D741B 40%, #f4f4f4 40%);
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+}
+
+.profile {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+
+.portalcredito-icon {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.menu-opciones {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.item:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.item img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item h2 {
+    font-size: 18px;
+    color: #1D741B; 
+    font-weight: bold;
+}
+
+.item p {
+    font-size: 14px;
+    color: black;
+}
+
+.item .rojotext {
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}
+
+.item-text .status {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-text .status-enviada {
+    color: blue;
+}
+
+.item-text .status-cancelada {
+    color: red;
+}
+
+.item-text .status-respondida {
+    color: green;
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitudes</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../images/grupo_pochteca_logo.jpeg" alt="Logo de la empresa"> 
+            <h1>Proveedor externo</h1>
+        </div>
+        
+        <div id="form-proveedor" class="form-container">
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="nombre-proveedor">Nombre del proveedor:</label>
+                    <input type="text" id="nombre-proveedor">
+                </div>
+                <div class="form-group flex-item">
+                    <label for="rfc-proveedor">RFC del proveedor:</label>
+                    <input type="text" id="rfc-proveedor">
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="numero-proveedor">Número de proveedor:</label>
+                    <input type="text" id="numero-proveedor">
+                </div>
+                <div class="form-group flex-item">
+                    <label for="tipo-solicitud-proveedor">Tipo de solicitud:</label>
+                    <select id="tipo-solicitud-proveedor">
+                        <option value="guiadeusuario">Guia de usuario para carga de facturas en coupa</option>
+                        <option value="pagoscomprobante">Pagos y comprobantes</option>
+                        <option value="solicitudfecha">Solicitud de fecha de pago</option>
+                        <option value="aclaracionfact">Aclaración de facturas</option>
+                        <option value="quejasugerencia">Queja o sugerencia</option>
+                    </select>
+                </div>
+            </div>    
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="adjuntar-archivo-proveedor">Adjuntar archivo:</label>
+                    <input type="file" id="adjuntar-archivo-proveedor">
+                </div>
+                <div class="form-group flex-item">
+                    <label for="fecha-limite-proveedor">Fecha límite de respuesta:</label>
+                    <input type="date" id="fecha-limite-proveedor">
+                </div>
+                <div class="form-group flex-item">
+                    <label for="estatus-solicitud-proveedor">Estatus de la solicitud:</label>
+                    <select id="estatus-solicitud-proveedor">
+                        <option value="enviada">Solicitud enviada</option>
+                        <option value="cancelada">Solicitud cancelada</option>
+                        <option value="respondida">Solicitud respondida</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentarios-proveedor">Comentarios:</label>
+                <textarea id="comentarios-proveedor"></textarea>
+            </div>
+            <div class="submit-button">
+                <button type="submit">Subir</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/menu.js"></script>
+</body>
+</html>
